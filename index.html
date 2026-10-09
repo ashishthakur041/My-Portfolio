@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashish Baidyanath Thakur | Portfolio</title>
+  <meta name="description" content="Personal portfolio showcasing skills, projects, and education.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: 88%; max-width: 1100px; margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: #0b1120ee;
+      border-bottom: 1px solid #263247;
+      backdrop-filter: blur(12px);
+    }
+    nav {
+      min-height: 70px; display: flex;
+      justify-content: space-between; align-items: center; gap: 20px;
+    }
+    .logo { font-size: 23px; font-weight: bold; color: #60a5fa; }
+    .nav-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .nav-links a:hover { color: #60a5fa; }
+    .hero {
+      min-height: 490px; display: flex; align-items: center;
+      padding: 85px 0;
+      background: radial-gradient(ellipse at top right, #172b50, #0b1120 65%);
+    }
+    .tag { color: #60a5fa; font-weight: bold; letter-spacing: 2px; }
+    h1 { font-size: clamp(38px, 6vw, 64px); line-height: 1.15; margin: 18px 0; }
+    h1 span, .accent { color: #60a5fa; }
+    .hero p { max-width: 650px; color: #aab6c8; font-size: 18px; }
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+    .btn {
+      display: inline-block; padding: 11px 20px; border-radius: 8px;
+      background: #3b82f6; color: white; font-weight: bold;
+      border: 1px solid #3b82f6; transition: .2s;
+    }
+    .btn:hover { transform: translateY(-2px); background: #2563eb; }
+    .btn-outline { background: transparent; border-color: #52627a; }
+    section { padding: 75px 0; scroll-margin-top: 70px; }
+    .section-title { font-size: 32px; margin-bottom: 10px; }
+    .section-intro { color: #9ca9bb; margin-bottom: 30px; }
+    .about-text { max-width: 800px; color: #bdc7d6; }
+    .skills {
+      display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px;
+    }
+    .skill {
+      background: #151f32; border: 1px solid #2b3a52;
+      border-radius: 8px; padding: 10px 17px;
+    }
+    .projects { background: #0e1728; }
+    .project-card {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 25px; padding: 25px;
+      border: 1px solid #2b3a52; border-radius: 15px;
+      background: #111c30; align-items: center;
+    }
+    .project-visual {
+      min-height: 220px; border-radius: 10px; padding: 22px;
+      display: flex; flex-direction: column; justify-content: center;
+      background: linear-gradient(135deg, #173c70, #172033);
+      border: 1px solid #365780;
+    }
+    .project-visual .cap { color: #93c5fd; font-size: 14px; }
+    .project-visual h3 { font-size: 28px; margin: 8px 0; }
+    .project-visual p { color: #cbd5e1; }
+    .project-info p { color: #aab6c8; margin: 12px 0; }
+    .project-info h3 { font-size: 25px; }
+    .project-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+    .contact-box {
+      border: 1px solid #2b3a52; border-radius: 14px;
+      padding: 28px; background: #111c30;
+    }
+    .contact-box p { color: #bdc7d6; margin: 10px 0; overflow-wrap: anywhere; }
+    footer { padding: 24px 0; text-align: center; color: #8794a8; border-top: 1px solid #263247; }
+    @media (max-width: 700px) {
+      .container { width: 90%; }
+      nav { padding: 14px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { gap: 12px 18px; font-size: 14px; }
+      .hero { min-height: auto; padding: 75px 0; }
+      section { padding: 55px 0; }
+      .project-card { grid-template-columns: 1fr; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a class="logo" href="#home">Ashish Thakur<span>.</span></a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="tag">WELCOME TO MY PORTFOLIO</div>
+      <h1>Hi, I'm Ashish Baidyanath Thakur.<br><span>IT Student & Developer</span></h1>
+      <p>
+        I am a B.Sc. IT student passionate about technology, web development,
+        and building practical projects that solve real-world problems.
+      </p>
+      <div class="buttons">
+        <a class="btn" href="#projects">Explore My Projects</a>
+        <a class="btn btn-outline" href="#contact">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-intro">A little about my background and goals.</p>
+      <p class="about-text">
+        I am currently pursuing B.Sc. in Information Technology. I enjoy
+        learning new technologies and applying my knowledge through hands-on
+        projects. My goal is to strengthen my technical skills, gain practical
+        experience, and grow professionally in the IT industry.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <p class="section-intro">Technologies and tools I have worked with.</p>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">PHP</span>
+        <span class="skill">MySQL</span>
+        <span class="skill">Excel</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">VS Code</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Project</h2>
+      <p class="section-intro">A project I have built and published online.</p>
+
+      <article class="project-card">
+        <div class="project-visual">
+          <div class="cap">FEATURED PROJECT · WEB DEVELOPMENT</div>
+          <h3>🎓 CampusConnect</h3>
+          <p>Smart Campus Navigator & Lost Item Tracker</p>
+        </div>
+        <div class="project-info">
+          <h3>CampusConnect</h3>
+          <p>
+            A campus-focused web application designed to help students find
+            campus locations, report lost belongings, search for missing items,
+            and access important notices.
+          </p>
+          <div class="skills">
+            <span class="skill">Web Development</span>
+            <span class="skill">Campus Navigation</span>
+            <span class="skill">Lost & Found</span>
+          </div>
+          <div class="project-links">
+            <a class="btn" href="https://ashishthakur041.github.io/CampusConnect/"
+               target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+            <a class="btn btn-outline"
+               href="https://github.com/ashishthakur041/CampusConnect"
+               target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-intro">Feel free to reach out for opportunities and collaboration.</p>
+      <div class="contact-box">
+        <p><strong>Email:</strong> ashithakur041@gmail.com</p>
+        <p><strong>GitHub:</strong>
+          <a class="accent" href="https://github.com/ashishthakur041"
+             target="_blank" rel="noopener noreferrer">github.com/ashishthakur041</a>
+        </p>
+        <p><strong>LinkedIn:</strong>
+          <a class="accent" href="https://www.linkedin.com/in/ashish-thakur-it"
+             target="_blank" rel="noopener noreferrer">linkedin.com/in/ashish-thakur-it</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> Ashish Baidyanath Thakur. Built with HTML, CSS & JavaScript.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
